@@ -1,0 +1,239 @@
+{
+  "updates": [
+    {
+      "file": "2026-01-01_annual_leave.sql",
+      "domain": "annual_leave",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "勞動基準法第 38 條",
+      "payload": {
+        "tiers": [
+          {
+            "months": "6",
+            "days": "3"
+          },
+          {
+            "months": "12",
+            "days": "7"
+          },
+          {
+            "months": "24",
+            "days": "10"
+          },
+          {
+            "months": "36",
+            "days": "14"
+          },
+          {
+            "months": "60",
+            "days": "15"
+          },
+          {
+            "months": "120",
+            "days": "16"
+          }
+        ],
+        "over_ten_years": {
+          "increment_per_year": "1",
+          "max_days": "30"
+        },
+        "settlement": {
+          "note": "勞基法施行細則第 24 條之 1；年度終結未休日數應折發工資",
+          "carry_over_months": "12"
+        }
+      }
+    },
+    {
+      "file": "2026-01-01_depreciation.sql",
+      "domain": "depreciation",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "所得稅法第 51 條；固定資產耐用年數表",
+      "payload": {
+        "methods": [
+          "straight_line",
+          "declining_balance"
+        ],
+        "default_method": "straight_line",
+        "residual_rate": "0",
+        "proration": "monthly",
+        "useful_lives": {
+          "building_improvement": "10",
+          "vehicle": "5",
+          "computer": "3",
+          "office_equipment": "5",
+          "machinery": "8",
+          "furniture": "5"
+        }
+      }
+    },
+    {
+      "file": "2026-01-01_health_insurance.sql",
+      "domain": "health_insurance",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "全民健康保險法第 18 條、第 27 條；一般保險費率與平均眷口數",
+      "payload": {
+        "rate": "0.0517",
+        "employer_share": "0.60",
+        "employee_share": "0.30",
+        "government_share": "0.10",
+        "avg_dependents": "1.61"
+      }
+    },
+    {
+      "file": "2026-01-01_labor_insurance.sql",
+      "domain": "labor_insurance",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "勞工保險條例第 13 條、第 15 條；2026 年適用之勞工保險投保薪資分級表",
+      "payload": {
+        "max_insured_salary": "45800",
+        "premium_rate": "0.11",
+        "employer_share": "0.70",
+        "employee_share": "0.20",
+        "government_share": "0.10"
+      }
+    },
+    {
+      "file": "2026-01-01_minimum_wage.sql",
+      "domain": "minimum_wage",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "最低工資法第 9 條；2026 年適用之最低工資",
+      "payload": {
+        "monthly": "29500",
+        "hourly": "196"
+      }
+    },
+    {
+      "file": "2026-01-01_overtime.sql",
+      "domain": "overtime",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "勞動基準法第 24 條、第 32 條",
+      "payload": {
+        "monthly_hours": "240",
+        "monthly_max_hours": "46",
+        "day_types": [
+          {
+            "code": "weekday",
+            "label": "平日",
+            "max_hours": "4",
+            "bands": [
+              {
+                "up_to_hours": "2",
+                "multiplier": "1.34"
+              },
+              {
+                "multiplier": "1.67"
+              }
+            ]
+          },
+          {
+            "code": "rest_day",
+            "label": "休息日",
+            "max_hours": "12",
+            "bands": [
+              {
+                "up_to_hours": "2",
+                "multiplier": "1.34"
+              },
+              {
+                "multiplier": "1.67"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "file": "2026-01-01_owner_insurance.sql",
+      "domain": "owner_insurance",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "全民健康保險法第 27 條第 1 款第 1 目；勞工退休金條例第 7 條、第 14 條",
+      "payload": {
+        "health_employer_share": "0",
+        "health_employee_share": "1.00",
+        "health_government_share": "0",
+        "pension_employer_rate": "0"
+      }
+    },
+    {
+      "file": "2026-01-01_pension.sql",
+      "domain": "pension",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "勞工退休金條例第 14 條；雇主提繳率不得低於勞工每月工資的 6%",
+      "payload": {
+        "employer_rate": "0.06"
+      }
+    },
+    {
+      "file": "2026-01-01_vat.sql",
+      "domain": "vat",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "加值型及非加值型營業稅法第 10 條、第 35 條；一般稅額計算，每二月一期",
+      "payload": {
+        "rate": "0.05",
+        "period_months": "2"
+      }
+    },
+    {
+      "file": "2026-01-01_withholding.sql",
+      "domain": "withholding",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "各類所得扣繳率標準第 2 條、第 13 條；所得稅法第 88 條",
+      "payload": {
+        "codes": [
+          {
+            "code": "50",
+            "name": "薪資所得",
+            "rate": "0.05",
+            "threshold": "0",
+            "note": "本系統採 5% 就源扣繳；員工可申請改按扣繳稅額表計算"
+          },
+          {
+            "code": "9A",
+            "name": "執行業務所得",
+            "rate": "0.10",
+            "threshold": "20000",
+            "note": "每次給付未達起扣點免予扣繳"
+          },
+          {
+            "code": "9B",
+            "name": "稿費",
+            "rate": "0.10",
+            "threshold": "20000",
+            "note": "同一年度給付總額未達 180,000 者，全年免稅"
+          },
+          {
+            "code": "51",
+            "name": "租賃所得",
+            "rate": "0.10",
+            "threshold": "20000",
+            "note": "每次給付未達起扣點免予扣繳"
+          }
+        ],
+        "supplementary_health": {
+          "rate": "0.0211",
+          "threshold": "20000",
+          "note": "全民健康保險法第 31 條；高額獎金、兼職所得、執行業務收入等六類"
+        }
+      }
+    }
+  ]
+}
