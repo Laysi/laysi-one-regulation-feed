@@ -234,17 +234,6 @@
           "note": "全民健康保險法第 31 條；高額獎金、兼職所得、執行業務收入等六類"
         }
       }
-    },
-    {
-      "file": "9999-01-01_vat_e2e.sql",
-      "domain": "vat",
-      "version": "端對端測試",
-      "effective_from": "2099-01-01",
-      "effective_to": null,
-      "source_note": "端對端測試，稍後移除",
-      "payload": {
-        "rate": "0.05"
-      }
     }
   ]
 }
