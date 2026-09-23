@@ -100,6 +100,45 @@
       }
     },
     {
+      "file": "2026-01-01_leave_pay.sql",
+      "domain": "leave_pay",
+      "version": "2026.1",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "source_note": "勞工請假規則第 2 至 4 條、第 7 條、第 8 條；性別平等工作法第 14 條；勞動基準法第 38 條、第 50 條",
+      "payload": {
+        "annual": {
+          "ratio": "1"
+        },
+        "personal": {
+          "ratio": "0"
+        },
+        "sick": {
+          "ratio": "0.5",
+          "yearly_days": "30",
+          "beyond_ratio": "0"
+        },
+        "menstrual": {
+          "ratio": "0.5",
+          "separate_days": "3"
+        },
+        "official": {
+          "ratio": "1"
+        },
+        "marriage": {
+          "ratio": "1"
+        },
+        "bereavement": {
+          "ratio": "1"
+        },
+        "maternity": {
+          "ratio": "1",
+          "min_service_months": "6",
+          "short_service_ratio": "0.5"
+        }
+      }
+    },
+    {
       "file": "2026-01-01_minimum_wage.sql",
       "domain": "minimum_wage",
       "version": "2026.1",
