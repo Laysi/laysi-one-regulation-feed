@@ -1,6 +1,29 @@
 {
   "updates": [
     {
+      "file": "2005-07-01_partial_month.sql",
+      "domain": "partial_month",
+      "version": "2005.1",
+      "effective_from": "2005-07-01",
+      "effective_to": null,
+      "source_note": "勞工保險條例施行細則第 28-1 條；勞工退休金條例施行細則第 22 條；全民健康保險法第 30 條第 2 項",
+      "payload": {
+        "labor_days_per_month": "30",
+        "pension_days_per_month": "30"
+      }
+    },
+    {
+      "file": "2013-01-01_health_dependents.sql",
+      "domain": "health_dependents",
+      "version": "2013.1",
+      "effective_from": "2013-01-01",
+      "effective_to": null,
+      "source_note": "全民健康保險法第 18 條第 2 項",
+      "payload": {
+        "max_counted": "3"
+      }
+    },
+    {
       "file": "2026-01-01_annual_leave.sql",
       "domain": "annual_leave",
       "version": "2026.1",
