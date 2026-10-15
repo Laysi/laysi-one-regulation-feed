@@ -104,7 +104,7 @@
         "employer_share": "0.60",
         "employee_share": "0.30",
         "government_share": "0.10",
-        "avg_dependents": "1.61"
+        "avg_dependents": "1.56"
       }
     },
     {
@@ -116,7 +116,7 @@
       "source_note": "勞工保險條例第 13 條、第 15 條；2026 年適用之勞工保險投保薪資分級表",
       "payload": {
         "max_insured_salary": "45800",
-        "premium_rate": "0.11",
+        "premium_rate": "0.115",
         "employer_share": "0.70",
         "employee_share": "0.20",
         "government_share": "0.10"
@@ -295,6 +295,36 @@
           "threshold": "20000",
           "note": "全民健康保險法第 31 條；高額獎金、兼職所得、執行業務收入等六類"
         }
+      }
+    },
+    {
+      "file": "2026-10-01_health_insurance.sql",
+      "domain": "health_insurance",
+      "version": "2026.2",
+      "effective_from": "2026-10-01",
+      "effective_to": null,
+      "source_note": "全民健康保險法第 18 條、第 27 條；更正 2026.1 的平均眷口數",
+      "payload": {
+        "rate": "0.0517",
+        "employer_share": "0.60",
+        "employee_share": "0.30",
+        "government_share": "0.10",
+        "avg_dependents": "1.56"
+      }
+    },
+    {
+      "file": "2026-10-01_labor_insurance.sql",
+      "domain": "labor_insurance",
+      "version": "2026.2",
+      "effective_from": "2026-10-01",
+      "effective_to": null,
+      "source_note": "勞工保險條例第 13 條、第 15 條；更正 2026.1 的普通事故保險費率",
+      "payload": {
+        "max_insured_salary": "45800",
+        "premium_rate": "0.115",
+        "employer_share": "0.70",
+        "employee_share": "0.20",
+        "government_share": "0.10"
       }
     }
   ]
