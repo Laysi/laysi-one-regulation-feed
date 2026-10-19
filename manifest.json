@@ -1,29 +1,6 @@
 {
   "updates": [
     {
-      "file": "2005-07-01_partial_month.sql",
-      "domain": "partial_month",
-      "version": "2005.1",
-      "effective_from": "2005-07-01",
-      "effective_to": null,
-      "source_note": "勞工保險條例施行細則第 28-1 條；勞工退休金條例施行細則第 22 條；全民健康保險法第 30 條第 2 項",
-      "payload": {
-        "labor_days_per_month": "30",
-        "pension_days_per_month": "30"
-      }
-    },
-    {
-      "file": "2013-01-01_health_dependents.sql",
-      "domain": "health_dependents",
-      "version": "2013.1",
-      "effective_from": "2013-01-01",
-      "effective_to": null,
-      "source_note": "全民健康保險法第 18 條第 2 項",
-      "payload": {
-        "max_counted": "3"
-      }
-    },
-    {
       "file": "2026-01-01_annual_leave.sql",
       "domain": "annual_leave",
       "version": "2026.1",
@@ -120,45 +97,6 @@
         "employer_share": "0.70",
         "employee_share": "0.20",
         "government_share": "0.10"
-      }
-    },
-    {
-      "file": "2026-01-01_leave_pay.sql",
-      "domain": "leave_pay",
-      "version": "2026.1",
-      "effective_from": "2026-01-01",
-      "effective_to": null,
-      "source_note": "勞工請假規則第 2 至 4 條、第 7 條、第 8 條；性別平等工作法第 14 條；勞動基準法第 38 條、第 50 條",
-      "payload": {
-        "annual": {
-          "ratio": "1"
-        },
-        "personal": {
-          "ratio": "0"
-        },
-        "sick": {
-          "ratio": "0.5",
-          "yearly_days": "30",
-          "beyond_ratio": "0"
-        },
-        "menstrual": {
-          "ratio": "0.5",
-          "separate_days": "3"
-        },
-        "official": {
-          "ratio": "1"
-        },
-        "marriage": {
-          "ratio": "1"
-        },
-        "bereavement": {
-          "ratio": "1"
-        },
-        "maternity": {
-          "ratio": "1",
-          "min_service_months": "6",
-          "short_service_ratio": "0.5"
-        }
       }
     },
     {
